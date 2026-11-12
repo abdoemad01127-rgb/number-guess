@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #F4F7FB;
+    --main-text-color:#1e293b;
+    --main-button-color:#2563eb;
+    --hover-button-color:#1d4ed8;
+    --winner-color:#15803d;
+    --loser-color:#dc2626;
+    --card-color:#ffffff;
+    --border-color:#cbd5e1;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--main-text-color);
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 10px 10px 7px rgba(30, 41, 59, 0.12);
+
+    h1{
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    .game{
+        padding: 15px;
+        input{
+            padding: 5px;
+            width: 90px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            margin: 0 7px;
+        }
+
+        button{
+            padding: 7px 15px;
+            font-weight: 600;
+            background-color: var(--main-button-color);
+            color: #ffffff; 
+            transition: all .5s;
+            border: none;
+            border-radius: 5px;           
+        }
+
+        button:hover{
+            background-color: var(--hover-button-color);
+            cursor: pointer;
+        }
+    }
+
+    .wrong-massege{
+        padding: 10px 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 7px;
+        background-color: var(--loser-color);
+        color:#ffffff;
+        margin: 10px 0px;
+    }
+
+    .winner-massege{
+        padding: 10px 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 7px;
+        background-color: var(--winner-color);
+        color:#ffffff;
+        margin: 10px 0px;
+    }
+    .new-game{
+        margin-top: 12px;
+        padding: 7px 15px;
+        font-weight: 600;
+        background-color: var(--main-button-color);
+        color: #ffffff; 
+        transition: all .5s;
+        border: none;
+        border-radius: 5px; 
+        font-family: inherit;
+    }
+    .new-game:hover{
+        background-color: var(--hover-button-color);
+        cursor: pointer;
+    }
+
+    button:disabled{
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+
+

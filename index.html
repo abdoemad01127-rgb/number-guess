@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- style link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="title-game"></h1>
+        <p>خمّن الرقم السري من 1 إلى 100</p>
+        <div class="game">
+            <label for="guess-number">اكتب التخمين</label>
+            <input type="number" placeholder="مثلا  26" id="guess-number" min="1" max="100">
+            <button id="btn-check">تحقق</button>
+        </div>
+
+
+        <p id="check-guess"></p>
+
+        <p id="Attempts"></p>
+
+        <button id="new-game" class="new-game" type="button">إعادة اللعب</button>
+        
+    </div>
+
+
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
